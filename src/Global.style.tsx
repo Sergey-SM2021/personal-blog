@@ -41,3 +41,8 @@ export const Btn = styled.button<{ dangerous?: boolean }>`
         background-color: ${({ dangerous }) => (dangerous ? '#e14237' : '#595ddc')};
     }
 `
+
+export const AppWrapper = styled.div`
+    height:100%;
+    background-color:#181d50;
+`
