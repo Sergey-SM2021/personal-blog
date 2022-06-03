@@ -35,7 +35,7 @@ export const Name = styled.div`
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
-    letter-spacing: 0em;
+    letter-spacing: 0px;
     color:#fff;
 `
 

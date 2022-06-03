@@ -9,8 +9,12 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 14px;
         font-weight: 400;
         line-height: 21px;
-        letter-spacing: 0em;
+        letter-spacing: 0px;
         height: 100%;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
     }
 `
 
@@ -26,7 +30,7 @@ export const color = {
 }
 
 export const Btn = styled.button<{ dangerous?: boolean }>`
-    background-color: ${({ dangerous }) => (dangerous ? '#CD251A' : '#3137C9')};
+    background-color: ${({ dangerous }) => (dangerous ? color.btn_dangerous : color.btn)};
     border: none;
     color: #fff;
     height: 40px;
