@@ -4,9 +4,10 @@ import avatar from '../../assets/sider/ava.jpg'
 import SocialNetworkIcon0 from '../../assets/sider/instagram (1) 1.svg'
 import SocialNetworkIcon1 from '../../assets/sider/pinterest 1.svg'
 import SocialNetworkIcon2 from '../../assets/sider/vk 1.svg'
+import { forwardRef } from "react"
 
-export const Sidebar = () => {
-    return (<SidebarWrapper>
+export const Sidebar = forwardRef<HTMLDivElement, {}>((props, ref) => {
+    return (<SidebarWrapper ref={ref}>
         <Bg src={bg} alt="фон" />
         <PersonalData>
             <Ava src={avatar} />
@@ -27,4 +28,4 @@ export const Sidebar = () => {
             </Footer>
         </PersonalData>
     </SidebarWrapper>)
-}
+})

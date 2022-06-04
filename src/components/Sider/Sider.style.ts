@@ -5,7 +5,6 @@ export const SidebarWrapper = styled.aside`
     position: absolute;
     top: 0;
     left: 0;
-    min-height: 100vh;
     background-color: ${color.secondary};
     width: ${size.sider};`
 
